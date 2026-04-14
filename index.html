@@ -7,10 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Assignment 12</h1>
-    <p>Welcome to my CMPS262 Assignment 12 Webpage!</p>
+    <div>   
+        <h1>Assignment 12 - Notifiaction App</h1>
+        <p>Enter a Custom Notification Below</p>
 
-    <button onclick="showMessage()">Click Me</button>
+        <input type="text" id="titleInput" placeholder="Enter notification title">
+        <input type="text" id="messageInput" placeholder="Enter custom message">
+        <input type="text" id="iconInput" placeholder="Enter icon image URL">
 
+
+        <button onclick="showNotification()">Send Notification</button>
+
+        <p id="countDisplay">Notifications sent this session: 0</p>
+    </div> 
     <script src="script.js"></script>
 </body>
